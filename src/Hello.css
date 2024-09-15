@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('./Components/Assets/pattern_fractal_glow_1094735_2560x1080.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  max-width: 400px;
+  backdrop-filter: blur(30px);
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-container h2 {
+  color: #5adb90;
+  text-align: center; /* Alinea el texto dentro del h2, aunque con flexbox no es estrictamente necesario */
+  font-size: 2rem; /* Ajusta el tamaño de la fuente */
+}
+
+.login-container h2 svg {
+  margin: 0 1px; /* Espacio entre las letras y el icono */
+  font-size: 0.8em; /* Ajusta el tamaño del icono */
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0;
+}
+
+.input-with-icon {
+  display: flex;/* Añadido para alinear el input y el icono */
+  align-items: center;/* Añadido para alinear verticalmente */
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 8px 45px 8px 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 2px solid #000;/* Añade un borde */
+  background-color: transparent; /* Hace el fondo transparente */
+  flex: 1;/* Añadido para que el input ocupe el espacio disponible */
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.input-with-icon .icon {
+  margin-left: -30px;/* Añadido para posicionar el icono sobre el borde del input */
+  color: #5adb90; /* Color del icono */
+}
+
+.login-container input:focus {
+  border-color: #5adb90;/* Cambia el color del borde al hacer foco */
+  outline: none;/* Elimina el borde por defecto */
+}
+
+.login-container .error {
+  color: rgb(236, 5, 5);
+  margin-top: 10px;
+}
+
+.login-container .submit-button {
+  background-color: rgb(214, 171, 77);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.login-container .submit-button:hover {
+  background-color: #5adb90;
+}
+
+.remember-forgot {
+  display: flex;/* Utiliza el modelo de caja flexible */
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: space-between;/* Espacio uniforme entre elementos */
+  gap: 20px;/* Espacio entre los elementos */
+  margin: -15px 0 15px;
+  flex-wrap: nowrap;/* Evita que los elementos se envuelvan */
+ 
+  margin-top: 15px; /* Espacio superior */
+}
+
+.remember-forgot label {
+  accent-color: #fff;
+  color: #5adb90;
+  display: flex;/* Asegura que el checkbox y el texto estén alineados */
+  align-items: center;/* Alinea el checkbox y el texto verticalmente */
+  white-space: nowrap;/* Evita que el texto se envuelva */
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 8px;/* Espacio entre el checkbox y el texto */
+}
+
+.remember-forgot a {
+  text-decoration: none;/* Elimina el subrayado del enlace */
+  color: white;/* Color del enlace */
+}
+
+.remember-forgot p {
+  text-decoration: none;/* Elimina el subrayado del enlace */
+  color: #5adb90;/* Color del enlace */
+  font-size: 16px;
+  margin-top: 40px;
+
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;/* Subraya el enlace al pasar el cursor */
+}
+
+.remember-forgot2 {
+  display: flex; /* Utiliza el modelo de caja flexible */
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-top: 15px; /* Espacio superior */
+  font-size: 14.5px;
+  text-align: center;
+}
+
+.remember-forgot2 p {
+  color: #5adb90; /* Color del texto */
+}
+
+.remember-forgot2 a {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Color del enlace */
+}
+
+.remember-forgot2 a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
